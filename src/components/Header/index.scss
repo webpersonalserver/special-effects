@@ -1,0 +1,14 @@
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: $color-black;
+  border-bottom: 1px solid $color-01;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: $color-9d;
+  font-size: 14px;
+}

@@ -1,0 +1,54 @@
+.Home {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 40px 0;
+
+  .box{
+    width: 960px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .card{
+    width: 300px;
+    min-height: 120px;
+    background-color: $color-white;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 0 20px 20px;
+    cursor: pointer;
+
+    &:nth-of-type(4n+1){
+      margin-left: 0;
+    }
+    &-title{
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: keep-all;
+      white-space: nowrap;
+      box-sizing: border-box;
+      font-weight: bold;
+      font-size: 20px;
+      color: $color-02;
+      line-height: 40px;
+      text-align: justify;
+    }
+    &-desc{
+      width: 100%;
+      @include multiple-lines-omitted;  
+      color: $color-83;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: justify;
+    }
+  }
+}
+
