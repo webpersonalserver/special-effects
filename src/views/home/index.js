@@ -11,7 +11,12 @@ class Home extends Component {
         path: '/clock'
       }, {
         label: 'canvas转盘',
-        path: '/clock'
+        desc: '使用canvas绘制时钟',
+        path: '/turntable'
+      }, {
+        label: '图形填充',
+        desc: '使用canvas填充图形内部',
+        path: '/graphics'
       }]
     }
   }

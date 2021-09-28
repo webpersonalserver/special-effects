@@ -1,5 +1,7 @@
 import Home from 'views/home'
 import Clock from 'views/clock'
+import Turntable from 'views/turntable'
+import Graphics from 'views/graphics'
 
 const routes = [{
   path: '/',
@@ -22,6 +24,22 @@ const routes = [{
       bgColor: '#1A1A1A'
     },
     component: Clock
+  }, {
+    path: '/turntable',
+    name: 'Turntable',
+    meta: {
+      title: 'canvas转盘',
+      bgColor: '#1A1A1A'
+    },
+    component: Turntable
+  }, {
+    path: '/graphics',
+    name: 'Graphics',
+    meta: {
+      title: '图形',
+      bgColor: '#87CEFF'
+    },
+    component: Graphics
   }]
 }]
 
