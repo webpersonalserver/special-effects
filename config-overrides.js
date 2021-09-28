@@ -1,4 +1,5 @@
-const { override, adjustStyleLoaders } = require("customize-cra")
+const { override, adjustStyleLoaders, addWebpackPlugin } = require("customize-cra")
+const { ProvidePlugin } = require('webpack')
 
 module.exports = override(
   adjustStyleLoaders(rule => {
@@ -10,5 +11,12 @@ module.exports = override(
         }
       })
     }
-  })
+  }),
+  addWebpackPlugin(
+    new ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    })
+  )
 )

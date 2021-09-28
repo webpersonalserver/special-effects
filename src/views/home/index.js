@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Search from 'components/Search'
 import './index.scss'
 
 class Home extends Component {
@@ -42,7 +43,10 @@ class Home extends Component {
   render () {
     return (
       <div className="Home">
-        { this.renderCard() }
+        <Search />
+        <div className="container">
+          { this.renderCard() }
+        </div>
       </div>
     )
   }
