@@ -1,24 +1,13 @@
 import { Component } from 'react'
 import Search from 'components/Search'
+import { seModule } from 'static/js/table'
 import './index.scss'
 
 class Home extends Component {
   constructor () {
     super()
     this.state = {
-      data: [{
-        label: 'canvas时钟',
-        desc: '使用canvas绘制时钟',
-        path: '/clock'
-      }, {
-        label: 'canvas转盘',
-        desc: '使用canvas绘制时钟',
-        path: '/turntable'
-      }, {
-        label: '图形填充',
-        desc: '使用canvas填充图形内部',
-        path: '/graphics'
-      }]
+      data: seModule
     }
   }
   // 渲染卡片模块

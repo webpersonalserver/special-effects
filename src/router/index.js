@@ -2,6 +2,7 @@ import Home from 'views/home'
 import Clock from 'views/clock'
 import Turntable from 'views/turntable'
 import Graphics from 'views/graphics'
+import Compass from 'views/compass'
 
 const routes = [{
   path: '/',
@@ -40,6 +41,14 @@ const routes = [{
       bgColor: '#87CEFF'
     },
     component: Graphics
+  }, {
+    path: '/compass',
+    name: 'Compass',
+    meta: {
+      title: '罗盘',
+      bgColor: '#1A1A1A'
+    },
+    component: Compass
   }]
 }]
 
