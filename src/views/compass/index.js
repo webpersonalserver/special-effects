@@ -9,6 +9,7 @@ class Compass extends Component {
       monthEle: document.getElementById('month'),
       dayEle: document.getElementById('day'),
       weekEle: document.getElementById('week'),
+      nicknameEle: document.getElementById('nickname'),
       hourEle: document.getElementById('hour'),
       minuteEle: document.getElementById('minute'),
       secondEle: document.getElementById('second'),
@@ -18,13 +19,15 @@ class Compass extends Component {
   render () {
     return (
       <div className="compass">
-        <canvas id="year" width="940" height="940"></canvas>
-        <canvas id="month" width="940" height="940"></canvas>
-        <canvas id="day" width="940" height="940"></canvas>
-        <canvas id="week" width="940" height="940"></canvas>
-        <canvas id="hour" width="940" height="940"></canvas>
-        <canvas id="minute" width="940" height="940"></canvas>
-        <canvas id="second" width="940" height="940"></canvas>
+        <canvas id="year"></canvas>
+        <canvas id="month"></canvas>
+        <canvas id="day"></canvas>
+        <canvas id="week"></canvas>
+        <canvas id="nickname"></canvas>
+        <canvas id="hour"></canvas>
+        <canvas id="minute"></canvas>
+        <canvas id="second"></canvas>
+        <div className="masking"><div></div></div>
       </div>
     )
   }
