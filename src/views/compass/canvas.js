@@ -323,7 +323,13 @@ function render ({ yearEle, monthEle, dayEle, weekEle, nicknameEle, hourEle, min
 
     // 判断是否渲染
     if (hasRender) {
-      let { totalRotateS = 0, totalRotateF = 0, totalRotateH = 0, totalRotateN = 0, totalRotateW = 0, totalRotateD = 0, totalRotateM = 0 } = sParam
+      let { totalRotateS = 0 } = sParam
+      let { totalRotateF = 0 } = fParam
+      let { totalRotateH = 0 } = hParam
+      let { totalRotateN = 0 } = nParam
+      let { totalRotateW = 0 } = wParam
+      let { totalRotateD = 0 } = dParam
+      let { totalRotateM = 0 } = mParam
 
       // 判断秒
       if (sParam.second < second) { // 没超过60秒
