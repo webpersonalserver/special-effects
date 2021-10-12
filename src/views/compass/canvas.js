@@ -31,7 +31,6 @@ const hRadius = 275
 const fRadius = 335
 // 秒刻半径
 const sRadius = 414
-let hasRender = false
 
 // 获取当前时间参数
 function getCurrentTime () {
@@ -322,7 +321,7 @@ function render ({ yearEle, monthEle, dayEle, weekEle, nicknameEle, hourEle, min
     const nickname = getTimeNickname(hour)
 
     // 判断是否渲染
-    if (hasRender) {
+    if (sParam) {
       let { totalRotateS = 0 } = sParam
       let { totalRotateF = 0 } = fParam
       let { totalRotateH = 0 } = hParam
@@ -448,7 +447,6 @@ function render ({ yearEle, monthEle, dayEle, weekEle, nicknameEle, hourEle, min
       fParam = renderMinute(minute)
       // 绘制秒
       sParam = renderSecond(second)
-      hasRender = true
     }
 
     yParam = { ...yParam, year }
