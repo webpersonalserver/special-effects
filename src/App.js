@@ -36,7 +36,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        { hasHeader ? <Header /> : null }
+        { hasHeader ? <Header history={ this.props.history } /> : null }
         <div className="body" style={ style }>
           { renderRoutes(routes[0].routes) }
         </div>

@@ -1,4 +1,5 @@
 import Home from 'views/home'
+import Login from 'views/login'
 import Clock from 'views/clock'
 import Turntable from 'views/turntable'
 import Graphics from 'views/graphics'
@@ -17,6 +18,15 @@ const routes = [{
       hasHeader: true
     },
     component: Home
+  }, {
+    path: '/login',
+    name: 'Login',
+    exact: true,
+    meta: {
+      title: '登录',
+      bgColor: '#000000'
+    },
+    component: Login
   }, {
     path: '/clock',
     name: 'Clock',

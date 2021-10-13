@@ -9,9 +9,39 @@
   z-index: 4;
   overflow: hidden;
   box-sizing: border-box;
-  color: $color-9d;
-  font-size: 20px;
-  padding: 0 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  .right, .left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    color: $color-white;
+    font-size: 14px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .user{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: $color-9d;
+    background-color: $color-2f;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover{
+      color: $color-white;
+    }
+  }
 }
