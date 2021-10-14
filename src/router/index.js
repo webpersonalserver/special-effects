@@ -4,6 +4,7 @@ import Clock from 'views/clock'
 import Turntable from 'views/turntable'
 import Graphics from 'views/graphics'
 import Compass from 'views/compass'
+import Bullet from 'views/bullet'
 
 const routes = [{
   path: '/',
@@ -59,6 +60,14 @@ const routes = [{
       bgColor: '#1A1A1A'
     },
     component: Compass
+  }, {
+    path: '/bullet',
+    name: 'Bullet',
+    meta: {
+      title: '弹框特效',
+      bgColor: '#CAE4B6'
+    },
+    component: Bullet
   }]
 }]
 

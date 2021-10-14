@@ -15,6 +15,10 @@ const seModule = [{
   label: '罗盘',
   desc: '使用canvas绘制的时钟罗盘',
   path: '/compass'
+}, {
+  label: '弹框',
+  desc: '弹框显示消失的特效',
+  path: '/bullet'
 }]
 
 export  {
